@@ -1,0 +1,12 @@
+[package]
+name = "ascii-aquarium"
+version = "0.1.0"
+edition = "2021"
+description = "A procedural 3D terminal aquarium with a single betta fish, rendered as depth-buffered colored ASCII glyphs."
+
+[dependencies]
+crossterm = "0.28"
+
+[profile.release]
+opt-level = 3
+lto = true
